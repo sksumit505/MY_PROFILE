@@ -4,214 +4,203 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumit Kumar | AI & ML Engineer</title>
+    <title>Sumit Kumar | AI Command Center</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="logo">SUMIT<span>.</span></a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">🌙</button>
-                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div class="layout-wrapper">
 
-    <!-- Hero Section -->
-<!-- Hero Section with Photo & Glow -->
-<section id="hero" class="hero-section">
-    <div class="hero-glow"></div>
-    <div class="hero-container container fade-in-up">
-        <!-- Profile Picture -->
-        <div class="hero-image-wrapper">
-            <img src="profile.jpg" alt="Sumit Kumar" class="hero-profile-pic" />
-        </div>
+        <!-- LEFT SIDEBAR: Permanent Profile & Command Hub -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span> First-Year CSE (AI/ML)
+                </div>
 
-        <!-- Text Content -->
-        <div class="hero-content">
-            <p class="tagline">Hello, I'm</p>
-            <h1>Sumit Kumar</h1>
-            <p class="description">
-                Aspiring AI/ML Engineer passionate about building innovative, data-driven solutions and solving
-                real-world problems.
-            </p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary pulse-btn">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="profile-frame">
+                    <img src="profile.jpg" alt="Sumit Kumar" class="profile-img" />
+                </div>
+
+                <h1 class="profile-name">Sumit Kumar</h1>
+                <p class="profile-title">Aspiring AI/ML Engineer</p>
+                <p class="profile-location">📍 Patna, Bihar</p>
+
+                <p class="profile-bio">
+                    Building data-driven solutions with Python, studying algorithmic logic, and exploring artificial
+                    intelligence.
+                </p>
+
+                <div class="sidebar-actions">
+                    <a href="#contact" class="btn btn-emerald">Get In Touch</a>
+                    <a href="mailto:sr12346428@gmail.com" class="btn btn-outline">Email Me</a>
+                </div>
+
+                <div class="social-hub">
+                    <a href="https://github.com" target="_blank" class="social-tag">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-tag">LinkedIn</a>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Sumit Kumar</p>
+                </footer>
             </div>
-        </div>
+        </aside>
+
+        <!-- RIGHT CANVAS: Scrollable Content & Interactive Cards -->
+        <main class="main-canvas">
+
+            <!-- Interactive Code Snippet Banner -->
+            <section class="terminal-banner">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">sumit_profile.py</span>
+                </div>
+                <div class="terminal-body">
+                    <pre><code><span class="py-keyword">class</span> <span class="py-class">Engineer</span>:
+    <span class="py-keyword">def</span> <span class="py-func">__init__</span>(self):
+        self.name = <span class="py-str">"Sumit Kumar"</span>
+        self.specialization = <span class="py-str">"Artificial Intelligence & Machine Learning"</span>
+        self.location = <span class="py-str">"Patna, Bihar"</span>
+        self.core_stack = [<span class="py-str">"Python"</span>, <span class="py-str">"C"</span>, <span class="py-str">"Pandas"</span>, <span class="py-str">"MySQL"</span>]
+
+    <span class="py-keyword">def</span> <span class="py-func">get_goal</span>(self):
+        <span class="py-keyword">return</span> <span class="py-str">"Building intelligent, impact-driven software solutions."</span></code></pre>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="canvas-section">
+                <h2 class="section-heading"><span>01.</span> About Me</h2>
+                <div class="content-box">
+                    <p>
+                        I am a first-year B.Tech student in Computer Science & Engineering (AI/ML Specialization) at
+                        Kendriya Vidyalaya alumnus based in Patna. I focus on core programming concepts, data analysis
+                        with Pandas, relational database management with MySQL, and backend logic in Python and C.
+                    </p>
+                    <p>
+                        I hold an <strong>Advanced Diploma in Computer Applications (ADCA)</strong> and actively pursue
+                        psychology books to understand human behavior and build user-first software.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills Matrix -->
+            <section id="skills" class="canvas-section">
+                <h2 class="section-heading"><span>02.</span> Technical Stack</h2>
+                <div class="skills-matrix">
+                    <div class="matrix-card">
+                        <span class="matrix-label">Languages</span>
+                        <h3>Python & C</h3>
+                        <p>Object-oriented logic, data structures, algorithm optimization.</p>
+                    </div>
+                    <div class="matrix-card">
+                        <span class="matrix-label">Data & Storage</span>
+                        <h3>Pandas & MySQL</h3>
+                        <p>Data cleaning, query structuring, dataset manipulation.</p>
+                    </div>
+                    <div class="matrix-card">
+                        <span class="matrix-label">Tools</span>
+                        <h3>GitHub & VS Code</h3>
+                        <p>Version control, repository management, ADCA certified.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section id="projects" class="canvas-section">
+                <h2 class="section-heading"><span>03.</span> Project Showcase</h2>
+                <div class="projects-stack">
+
+                    <div class="project-command-card">
+                        <div class="card-meta">
+                            <span class="badge-tech">Python / Admin Workflow</span>
+                            <h3>School Management System</h3>
+                        </div>
+                        <p>Designed and built a application to handle student database records, attendance logs, and
+                            administrative record-keeping efficiently.</p>
+                        <div class="tech-pills">
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                            <span>File Handling</span>
+                        </div>
+                    </div>
+
+                    <div class="project-command-card">
+                        <div class="card-meta">
+                            <span class="badge-tech">Python / Ticketing</span>
+                            <h3>Railway Management System</h3>
+                        </div>
+                        <p>A booking and system management platform handling train schedules, passenger record
+                            allocation, and seat reservations.</p>
+                        <div class="tech-pills">
+                            <span>Python</span>
+                            <span>Logic Control</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="project-command-card">
+                        <div class="card-meta">
+                            <span class="badge-tech">Python / Pandas</span>
+                            <h3>Daily Expenses Tracker</h3>
+                        </div>
+                        <p>Personal finance tracking application that records, categorizes, and provides analytical
+                            insights into daily spending patterns.</p>
+                        <div class="tech-pills">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+
+                    <div class="project-command-card">
+                        <div class="card-meta">
+                            <span class="badge-tech">C & Python / Gaming</span>
+                            <h3>Stone, Paper, Scissors Game</h3>
+                        </div>
+                        <p>Interactive command-line application built to test and reinforce core programming logic,
+                            conditional branches, and randomness algorithms.</p>
+                        <div class="tech-pills">
+                            <span>C</span>
+                            <span>Python</span>
+                            <span>CLI Logic</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="canvas-section">
+                <h2 class="section-heading"><span>04.</span> Initiate Contact</h2>
+                <div class="contact-box">
+                    <p>Interested in collaborating or discussing AI/ML projects? Send a message directly:</p>
+                    <form class="emerald-form" onsubmit="event.preventDefault(); alert('Message sent to Sumit!');">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required />
+                            <input type="email" placeholder="Your Email" required />
+                        </div>
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-emerald btn-full">Send Message &rarr;</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
     </div>
-</section>
 
-    <!-- About Section -->
-    <section id="about" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I am a first-year B.Tech student in Computer Science & Engineering with a specialization in
-                        AI/ML based in Patna, Bihar. I am eager to apply my foundational knowledge of artificial
-                        intelligence and machine learning to build impactful software.
-                    </p>
-                    <p>
-                        Beyond coding, I have a keen interest in reading psychology-based books to better understand
-                        human perspectives, along with strong teamwork and communication skills.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card float-card">
-                        <h3>B.Tech CSE</h3>
-                        <p>AI/ML Specialization</p>
-                    </div>
-                    <div class="stat-card float-card delay-1">
-                        <h3>ADCA</h3>
-                        <p>Advanced Computer Diploma</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-alt reveal">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card hover-lift">
-                    <h3>Programming</h3>
-                    <p>Python, C</p>
-                </div>
-                <div class="skill-card hover-lift">
-                    <h3>Data & Databases</h3>
-                    <p>Pandas, MySQL</p>
-                </div>
-                <div class="skill-card hover-lift">
-                    <h3>Tools & Certifications</h3>
-                    <p>GitHub, ADCA, VS Code</p>
-                </div>
-                <div class="skill-card hover-lift">
-                    <h3>Soft Skills</h3>
-                    <p>Teamwork, Fast Learner, Time Management, Emotional Intelligence</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-
-                <div class="project-card hover-glow">
-                    <div class="project-header">
-                        <h3>School Management System</h3>
-                        <span class="project-tag">Python</span>
-                    </div>
-                    <p>Developed a Python-based application to efficiently manage student records and administrative
-                        workflows.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Data Handling</span>
-                    </div>
-                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
-                </div>
-
-                <div class="project-card hover-glow">
-                    <div class="project-header">
-                        <h3>Railway Management System</h3>
-                        <span class="project-tag">Python</span>
-                    </div>
-                    <p>Built a comprehensive Python application designed to handle ticket booking and system management
-                        operations.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Logic Design</span>
-                    </div>
-                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
-                </div>
-
-                <div class="project-card hover-glow">
-                    <div class="project-header">
-                        <h3>Daily Expenses Tracker</h3>
-                        <span class="project-tag">Python / Data</span>
-                    </div>
-                    <p>Designed a personal productivity tool to systematically record, categorize, and analyze daily
-                        expenditure.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                    </div>
-                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
-                </div>
-
-                <div class="project-card hover-glow">
-                    <div class="project-header">
-                        <h3>Stone, Paper, Scissors Game</h3>
-                        <span class="project-tag">C / Python</span>
-                    </div>
-                    <p>Created an interactive terminal game utilizing Python and C programming to reinforce core logic
-                        design.</p>
-                    <div class="project-tech">
-                        <span>C</span>
-                        <span>Python</span>
-                    </div>
-                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-alt reveal">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Based in Patna, Bihar. Feel free to reach out via email or connect online!</p>
-            <form class="contact-form"
-                onsubmit="event.preventDefault(); alert('Thank you, Sumit will get back to you soon!');">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required />
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required />
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block pulse-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Sumit Kumar. All rights reserved.</p>
-            <div class="social-links">
-                <a href="mailto:sr12346428@gmail.com">Email</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

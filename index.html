@@ -1,133 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Kumar | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit Kumar | AI & ML Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Sumit.</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="#hero" class="logo">SUMIT<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">🌙</button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-image-wrapper">
-                <!-- Replace 'profile.jpg' with your image filename uploaded to GitHub -->
-                <img src="profile.jpg" alt="Sumit Kumar" class="profile-img" onerror="this.src='https://via.placeholder.com/220?text=Sumit+Kumar'">
+<!-- Hero Section with Photo & Glow -->
+<section id="hero" class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="hero-container container fade-in-up">
+        <!-- Profile Picture -->
+        <div class="hero-image-wrapper">
+            <img src="profile.jpg" alt="Sumit Kumar" class="hero-profile-pic" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="hero-content">
+            <p class="tagline">Hello, I'm</p>
+            <h1>Sumit Kumar</h1>
+            <p class="description">
+                Aspiring AI/ML Engineer passionate about building innovative, data-driven solutions and solving
+                real-world problems.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary pulse-btn">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Sumit Kumar</span></h1>
-                <p class="subtitle">AI / ML Engineer — Entry Level</p>
-                <p class="tagline">Aspiring AI/ML Engineer with a strong passion for building innovative, data-driven solutions and applying artificial intelligence to real-world problems.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a first-year B.Tech student in Computer Science & Engineering with a specialization in
+                        AI/ML based in Patna, Bihar. I am eager to apply my foundational knowledge of artificial
+                        intelligence and machine learning to build impactful software.
+                    </p>
+                    <p>
+                        Beyond coding, I have a keen interest in reading psychology-based books to better understand
+                        human perspectives, along with strong teamwork and communication skills.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card float-card">
+                        <h3>B.Tech CSE</h3>
+                        <p>AI/ML Specialization</p>
+                    </div>
+                    <div class="stat-card float-card delay-1">
+                        <h3>ADCA</h3>
+                        <p>Advanced Computer Diploma</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section fade-in">
-        <h2>About Me</h2>
-        <p>I am a B.Tech student in Computer Science & Engineering with an AI/ML Specialization. I am eager to apply my foundational knowledge of artificial intelligence and machine learning to contribute to impactful advancements in the field. Outside of technical interests, I enjoy reading psychology-based books to gain deeper insight into people and their perspectives.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section gray-bg fade-in">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Programming</h3>
-                <p>Python, C</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-database"></i>
-                <h3>Data & Databases</h3>
-                <p>NumPy, Pandas, MySQL</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-cubes"></i>
-                <h3>Tools & Platforms</h3>
-                <p>GitHub, VS Code, ADCA</p>
+    <section id="skills" class="section bg-alt reveal">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card hover-lift">
+                    <h3>Programming</h3>
+                    <p>Python, C</p>
+                </div>
+                <div class="skill-card hover-lift">
+                    <h3>Data & Databases</h3>
+                    <p>Pandas, MySQL</p>
+                </div>
+                <div class="skill-card hover-lift">
+                    <h3>Tools & Certifications</h3>
+                    <p>GitHub, ADCA, VS Code</p>
+                </div>
+                <div class="skill-card hover-lift">
+                    <h3>Soft Skills</h3>
+                    <p>Teamwork, Fast Learner, Time Management, Emotional Intelligence</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section fade-in">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>School Management System</h3>
-                <p>Developed a Python-based application to manage student records and administrative workflows efficiently.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Database</span>
-                </div>
-                <a href="https://github.com/sksumit505" target="_blank" class="project-link">GitHub Repository <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
 
-            <div class="project-card">
-                <h3>Railway Management System</h3>
-                <p>Built a Python application to handle booking operations and management logic for a railway system.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>System Design</span>
+                <div class="project-card hover-glow">
+                    <div class="project-header">
+                        <h3>School Management System</h3>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <p>Developed a Python-based application to efficiently manage student records and administrative
+                        workflows.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Data Handling</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
                 </div>
-                <a href="https://github.com/sksumit505" target="_blank" class="project-link">GitHub Repository <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
 
-            <div class="project-card">
-                <h3>Stone, Paper, Scissors</h3>
-                <p>Created an interactive game using Python and C to reinforce core programming logic and algorithmic thinking.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>C</span>
+                <div class="project-card hover-glow">
+                    <div class="project-header">
+                        <h3>Railway Management System</h3>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <p>Built a comprehensive Python application designed to handle ticket booking and system management
+                        operations.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Logic Design</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
                 </div>
-                <a href="https://github.com/sksumit505" target="_blank" class="project-link">GitHub Repository <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
 
-            <div class="project-card">
-                <h3>Daily Expenses Tracker</h3>
-                <p>Designed a practical tool to record, manage, and analyze personal daily financial expenses.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Data Analysis</span>
+                <div class="project-card hover-glow">
+                    <div class="project-header">
+                        <h3>Daily Expenses Tracker</h3>
+                        <span class="project-tag">Python / Data</span>
+                    </div>
+                    <p>Designed a personal productivity tool to systematically record, categorize, and analyze daily
+                        expenditure.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
                 </div>
-                <a href="https://github.com/sksumit505" target="_blank" class="project-link">GitHub Repository <i class="fa-solid fa-arrow-right"></i></a>
+
+                <div class="project-card hover-glow">
+                    <div class="project-header">
+                        <h3>Stone, Paper, Scissors Game</h3>
+                        <span class="project-tag">C / Python</span>
+                    </div>
+                    <p>Created an interactive terminal game utilizing Python and C programming to reinforce core logic
+                        design.</p>
+                    <div class="project-tech">
+                        <span>C</span>
+                        <span>Python</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="project-link">View Project &rarr;</a>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section gray-bg fade-in">
-        <h2>Get In Touch</h2>
-        <p>Based in Patna, Bihar. Interested in collaborating or discussing tech opportunities? Reach out!</p>
-        <div class="contact-links">
-            <a href="mailto:sr12346428@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i> sr12346428@gmail.com</a>
-            <a href="https://github.com/sksumit505" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <section id="contact" class="section bg-alt reveal">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Based in Patna, Bihar. Feel free to reach out via email or connect online!</p>
+            <form class="contact-form"
+                onsubmit="event.preventDefault(); alert('Thank you, Sumit will get back to you soon!');">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block pulse-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Sumit Kumar. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sumit Kumar. All rights reserved.</p>
+            <div class="social-links">
+                <a href="mailto:sr12346428@gmail.com">Email</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
